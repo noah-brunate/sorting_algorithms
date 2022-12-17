@@ -12,27 +12,30 @@ void bubble_sort(int *array, size_t size)
 {
 	int flag, k, i, j = 0;
 
-	for (k = 1; k < size; k++)
+	if (size >= 2)
 	{
-		flag = 0;
-		for (i = 0; i < size - 1; i++)
+		for (k = 1; k < size; k++)
 		{
-			if (array[i] > array[i + 1])
+			flag = 0;
+			for (i = 0; i < size - 1; i++)
 			{
-				j = array[i];
-				array[i] = array[i + 1];
-				arrray[i + 1] = j;
-				flag = 1;
-				for (h = 0; h < size;
-						h++)
+				if (array[i] > array[i + 1])
 				{
-					printf("%d", array[h]);
+					j = array[i];
+					array[i] = array[i + 1];
+					arrray[i + 1] = j;
+					flag = 1;
+					for (h = 0; h < size;
+							h++)
+					{
+						printf("%d", array[h]);
+					}
 				}
 			}
-		}
-		if (flag == 0)
-		{
-			break;
+			if (flag == 0)
+			{
+				break;
+			}
 		}
 	}
 }
