@@ -1,1 +1,1 @@
-sorting agorithms in c
+# Solution to tasks on Sorting algorithms
